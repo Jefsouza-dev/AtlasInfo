@@ -24,7 +24,9 @@ export default function RootLayout({
             <section className="container">
               <Link className="flex items-center gap-3" href="/">
                 <Image src="/Logo.svg" alt="logo" width={48} height={48} />
-                <h1 className="font-bold text-2xl">Atlas Info</h1>
+                <h1 className="text-black font-extrabold text-4xl tracking-tight">
+                  Atlas<span className="text-blue-400"> Info</span>
+                </h1>
               </Link>
             </section>
           </nav>
