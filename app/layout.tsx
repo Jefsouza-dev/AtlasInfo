@@ -21,11 +21,11 @@ export default function RootLayout({
       <body className={nunitoSans.className}>
         <main className="bg-gray-100 min-h-screen flex flex-col items-center">
           <nav className="w-full bg-white h-16 flex items-center justify-center">
-            <section className="container flex items-center gap-3">
-              <Link href="/">
+            <section className="container">
+              <Link className="flex items-center gap-3" href="/">
                 <Image src="/Logo.svg" alt="logo" width={48} height={48} />
+                <h1 className="font-bold text-2xl">Atlas Info</h1>
               </Link>
-              <h1 className="font-bold text-2xl">Atlas Info</h1>
             </section>
           </nav>
           {children}

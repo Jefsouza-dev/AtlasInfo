@@ -15,5 +15,7 @@ export default interface ICountryProps {
   region: string;
   subregion: string;
   population: number;
-  languages: string;
+  languages?: string;
+  borders?: string[];
+  cca3: string;
 }

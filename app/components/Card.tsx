@@ -1,26 +1,25 @@
-import ICountryProps from "../interfaces/IcountryProps";
 import Link from "next/link";
 import Image from "next/image";
 
-const Card = (country: ICountryProps) => {
+interface IcardProps {
+  name: string;
+  ptName: string;
+  flag: string;
+  flagAlt: string;
+}
+
+const Card = ({ name, ptName, flag, flagAlt }: IcardProps) => {
   return (
-    <Link href={`/country/${country.name.common}`}>
+    <Link href={`/country/${name}`}>
       <article
-        key={country.name.common}
+        key={name}
         className="h-64 min-w-full p-2 bg-white border-2 rounded-xl hover:border-indigo-200 transition-all hover:shadow-xl"
       >
         <div className="relative w-full h-40 p-2 overflow-hidden  rounded-xl">
-          <Image
-            src={country.flags.svg}
-            alt={country.flags.alt}
-            fill
-            className="object-cover"
-          />
+          <Image src={flag} alt={flagAlt} fill className="object-cover" />
         </div>
 
-        <h1 className="font-bold text-xl text-center mt-2 ">
-          {country.translations.por.common}
-        </h1>
+        <h1 className="font-bold text-xl text-center mt-2 ">{ptName}</h1>
       </article>
     </Link>
   );
