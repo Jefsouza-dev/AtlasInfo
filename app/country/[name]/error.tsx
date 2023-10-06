@@ -4,7 +4,7 @@ import Link from "next/link";
 const error = () => {
   return (
     <section className="flex flex-col container">
-      <h1 className="text-5xl text-center font-bold text-gray-800 my-16">
+      <h1 className="text-5xl text-center font-bold text-gray-900 my-16">
         Ops, ocorreu um erro ao exibir esse país!
       </h1>
 
