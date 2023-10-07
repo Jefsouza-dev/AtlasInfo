@@ -43,7 +43,7 @@ const CountryDetails = async ({ params: { name } }: countryName) => {
   const formatterPopulation = Intl.NumberFormat("en", { notation: "compact" });
 
   return (
-    <section className="container flex flex-col">
+    <section className="container flex flex-col mb-32">
       <h1 className="text-5xl text-center font-bold text-gray-800 my-12">
         {country.translations.por.common}
       </h1>
