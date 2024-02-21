@@ -1,7 +1,14 @@
 
 ## **This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).**
 
-## Prerequisites
+## Atlas info
+
+This is a web project that displays a list of countries in a grid format. When a country is clicked, the user is directed to a page with detailed information about that country.
+
+Link to Deploy: https://atlas-info.vercel.app/
+
+
+## How to run the project.
 
 Before you begin, make sure you have Node.js and npm installed on your system. If you haven't already, follow the instructions at [Node.js](https://nodejs.org/) to install.
 
@@ -10,7 +17,7 @@ Before you begin, make sure you have Node.js and npm installed on your system. I
 To start the project, first, clone this repository to your local machine. Open the terminal and execute the following command:
 
 ```bash
-git clone https://github.com/Jefsouza-dev/TechMall.git
+git clone https://github.com/Jefsouza-dev/AtlasInfo.git
 ```
 
 This will create a local copy of the project on your machine.
